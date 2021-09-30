@@ -15,7 +15,7 @@ pipeline {
 	    {
 	      withMaven(maven : 'Maven3.8.2')
 	    {
-		    sh 'mvn deploy'
+		    bat 'mvn deploy'
 	    }
   }
 
