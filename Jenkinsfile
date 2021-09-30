@@ -9,16 +9,12 @@ pipeline {
         bat "mvn clean install";
         }
     }
-    stage('Deployment Stage')
-  {
-	    steps
-	    {
-	      withMaven(maven : 'Maven3.8.2')
-	    {
-		    bat 'mvn deploy'
-	    }
-  }
+    stage('Deploy')
+    {
+      steps{
+        echo "Deploying Project";
 
-}
+    }
+    }
 }
 }
